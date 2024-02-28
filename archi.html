@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title> Dessins d'architecture- Laurane Steyert Graphisme </title>
+        <link href="style/archi.css" rel="stylesheet" >
+        <link href="style/style.css" rel="stylesheet" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <main>
+            <div class="navigation">
+                <div class="logoettexte" > 
+                    <a href="index.html"class="cta">
+                        <img src="images/logo.png" class="logo" alt="Logo">
+                    </a>
+                    <a href="index.html"class="cta"> LAURANE <br> STEYERT</a>
+                    
+                </div>
+                
+                <ul>
+                    <li><a href="archi.html#HK" class=" cta">HONG KONG</a> 
+                        <div  id='tab1Selector'> <p>Axonmétrie réalisée dans le cadre d'un projet de fin d'étude sur logement modulaire à Hong Kong.</p></div> 
+                    </li>
+                   
+                    <li><a href="archi.html#cycleup" class="cta">C’EST DANS LA BOITE</a>
+                        <div  id='tab2Selector'><p>Illustration réalisée pour le concours Cycle up «La place est libre»</p></div> 
+                    </li>
+                  
+                    <li><a href="archi.html#gdv" class="cta">UN HABITAT POUR LES VOYAGEURS</a> 
+                        <div   id='tab3Selector'><p>Illustration et axonométries réalisées pour une charte diffusée par le service Gens du voyage de l'Eurométropole de Strasbourg. <p></div> 
+                    </li>
+
+                    <li><a href="illu.html" class="autrepage">MES AUTRES ILLUSTRATIONS</a> 
+                        <div   id='tab4Selector'></div> 
+                    </li> 
+                    
+                </ul>
+
+                <a href="contact.html" class="cta bouton">CONTACT</a> 
+            </div>
+
+
+
+            <div class="tabs violet">
+
+                <div class="ancre" id="HK"></div>
+
+
+                <div class="tab hk">      
+                    <img src="images/archi.png" class="HK"  alt="hong kong" >
+                </div>
+            </div>
+            
+            <div class="tabs rose">
+
+                <div class="ancre"id="cycleup" ></div>
+                
+                <div class="tab cycleup">
+                    
+                    <img src="images/cycleup_pers.png" class="image"  alt="cycleup_pers" >
+                    <img src="images/cycleup_plan.png"class="vertical" alt="cycleup_plan" >   
+                </div>    
+            </div>
+            <div class="tabs violet">    
+
+                <div class="ancre" id="gdv" ></div>
+                <div class="tab gdv"> 
+                    <img src="images/gdv_axo.png" class=" image un"  alt="gdv_axo" >
+                    <img src="images/gdv_quartier.png" class="image deux"  alt="gdv_quartier" >
+                    <img src="images/gdv_pers.png" class="image trois"  alt="gdv_pers" >
+                </div> 
+                <div class="tab fin"></div>
+
+            </div>
+        </main>
+    </body>
+    <script>
+        document.onscroll = function (event) {
+        var elements = document.getElementsByClassName("tab");
+        for (var i = 0, len = elements.length; i < len; i++) {
+            var scrollTop = (document.documentElement && document.documentElement.scrollTop) || 
+              document.body.scrollTop;
+            if ((elements[i].offsetTop+(elements[i].clientHeight)/2) >= scrollTop) {
+                // found top-most tab in view
+                // remove previous "selected" class
+                var selectedElements = document.getElementsByClassName("selected");
+                if (selectedElements.length === 1) {
+                    selectedElements[0].className = "";
+                }
+                // assign new "selected" class
+                var tab = document.getElementById("tab" + (i+1).toString() + "Selector");
+                if (tab) {
+                    tab.parentElement.className = "selected";
+                }
+                break;
+            }
+        }
+    };
+    </script>
+    
+</html>    

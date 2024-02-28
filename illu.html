@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title> Illustrations - Laurane Steyert Graphisme </title>
+        <link href="style/illu.css" rel="stylesheet" >
+        <link href="style/style.css" rel="stylesheet" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div class="navigation">
+                <div class="logoettexte" > 
+                    <a href="index.html"class="cta">
+                        <img src="images/logo cheminée.png" class="logo" alt="Logo">
+                    </a>
+                    <a href="index.html"class="cta couleura"> LAURANE <br> STEYERT</a>
+                    
+                </div>
+                
+                <ul>
+                    <li><a href="illu.html#strasbourg" class="cta couleura">BALADE DANS STRASBOURG</a> 
+                        <div  id='tab1Selector'> <p class="couleura">Pour l’enterrement de vie de jeune fille d'une amie, j’ai réalisé une carte retraçant l’itinéraire du week-end dans Strasbourg et ses environs.</p></div> 
+                    </li>
+                   
+                    <li><a href="illu.html#couple" class="cta couleurb">VIVE LES MARIÉS</a>
+                        <div   id='tab2Selector'><p class="couleurb">Illustrations réalisés pour de jeunes mariés.</p></div> 
+                    </li>
+                  
+                    <li><a href="illu.html#lino" class="cta couleura">LINOGRAVURES</a> 
+                        <div   id='tab3Selector'><p class="couleura">Réalisations personnelles. La linogravure est une technique consistant à graver des plaques de linoleum, pour ensuite les encrer et transférer l’image sur papier.</p></div> 
+                    </li>
+
+                    <li><a href="archi.html" class="autrepage couleurb">DESSINS D'ARCHITECTURE</a> 
+                        <div   id='tab4Selector'></div>
+                    </li> 
+
+
+                </ul>
+                
+                <a href="contact.html" class="cta bouton couleura">CONTACT</a> 
+            </div>
+
+            
+            <div class="tabs rouge">
+
+                <div class="ancre" id="strasbourg"></div>
+                <div class="tab strasbourg">      
+                    
+                    <img src="images/mariage_carte.jpg" class="mariage image" alt="carte mariage" >
+                    <img src="images/mariage-dos.jpg" class="mariage image" alt="dos de carte mariage" >
+
+                </div>
+
+            </div>
+            <div class="tabs rose">
+
+                <div class="ancre" id="couple"></div>
+                <div class="tab couple">
+                    <img src="images/mariage_couple.jpg" class="image" alt="couple mariage" >      
+                </div>
+
+            </div>
+            <div class="tabs rouge">    
+
+                <div class="ancre" id="lino"></div>
+                <div class="tab lino">
+                    <div class="corse">
+                        <img src="images/noir.jpg" class="image" alt="corse noir" >
+                        <img src="images/bleu.jpg" class="image" alt="corse bleu" >
+                        <img src="images/rose.jpg" class="image" alt="corse rose" >
+                    </div>
+                        
+                    <div class="murner">
+                        <img src="images/lino_rue_murner.jpg" class="image" alt="rue murner" >
+                    </div>
+
+                    <div class="perso">
+                        <img src="images/lino_maison.jpg" class="image" alt="image linogravure d'une maison de ferme" >
+                        <img src="images/lino_caravane.jpg" class="image" alt="image linogravure de caravane" >
+                        <img src="images/poisson.jpg" class="image" alt="image linogravure de roseaux" >
+                    </div>                      
+                </div> 
+                <div class="tab fin"></div>
+
+                
+                 
+              
+
+
+                
+            
+            </div>
+              
+        </main>
+    </body>
+
+    <script>
+        document.onscroll = function (event) {
+        var elements = document.getElementsByClassName("tab");
+        for (var i = 0, len = elements.length; i < len; i++) {
+            var scrollTop = (document.documentElement && document.documentElement.scrollTop) || 
+              document.body.scrollTop;
+            if ((elements[i].offsetTop+(elements[i].clientHeight)/2) >= scrollTop) {
+                // found top-most tab in view
+                // remove previous "selected" class
+                var selectedElements = document.getElementsByClassName("selected");
+                if (selectedElements.length === 1) {
+                    selectedElements[0].className = "";
+                }
+                // assign new "selected" class
+                var tab = document.getElementById("tab" + (i+1).toString() + "Selector");
+                if (tab) {
+                    tab.parentElement.className = "selected";
+                }
+                break;
+            }
+        }
+    };
+    </script>
+</html>

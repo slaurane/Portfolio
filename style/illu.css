@@ -1,0 +1,105 @@
+.tabs{
+    
+    display: flex;
+    flex-direction: column;
+    margin-left: 24%;
+    padding-left: 8%;
+    padding-right: 8%;
+    justify-content: center;
+
+}
+
+.tab{
+    margin-bottom: 50px;
+}
+
+.rouge{
+    background: #f23763;
+}
+.rose{
+    background: #e76b88;
+    height: 120vh;
+
+}
+
+.couleura {
+    color: #f23763;
+}
+
+.couleurb {
+    color: #ea8ba1;
+
+}
+
+.autrepage{
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.selected .autrepage {
+    color:#ffffff;
+    background-color: #f23763;
+}
+  
+.autrepage:hover{
+    color:  rgb(255, 255, 255);
+}
+
+.image{
+    padding-top: 10px ;
+}
+
+.strasbourg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.strasbourg .image{
+    object-fit: contain;
+    max-height: 45vh;
+}
+
+.couple{
+    display: flex;
+    justify-content: center;
+}
+.couple .image{
+    max-height: 80vh;
+}
+
+.murner{
+    display: flex;
+    justify-content: center;
+}
+
+.corse{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.corse .image{
+    width: 20vw;
+}
+
+
+.murner .image{
+    width: 60vw;
+}
+
+.perso{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.perso .image{
+    max-width: 25vw;
+    height: 35vh;
+    object-fit: contain;
+}
+
+.fin{
+    height: 150px;
+}
