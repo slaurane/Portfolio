@@ -35,6 +35,7 @@
     text-decoration: none;
     display: inline-block;
     padding-left: 5px;
+    padding-right: 5px;
 }
 
 .selected .autrepage {
@@ -43,7 +44,7 @@
 }
   
 .autrepage:hover{
-    color:  rgb(255, 255, 255);
+    opacity: 60%;
 }
 
 .image{
