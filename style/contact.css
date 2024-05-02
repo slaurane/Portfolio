@@ -1,5 +1,10 @@
+.navigation{
+    background-color:rgb(255, 255, 255);
+}
+
 .tabs{
 
+    display: flex;
     margin-left:200px;
     padding-left: 8%;
     padding-right: 8%;
@@ -20,4 +25,9 @@ Li{
 
 .cta{
     color: rgb(174, 182, 96)
+}
+
+.texte{
+    padding: 40px;
+    color: white;
 }
