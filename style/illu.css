@@ -1,41 +1,40 @@
-.tabs{
+.navigation{
+    background-color:rgb(255, 50, 74);
+}
+
+.projet{
     
     display: flex;
     flex-direction: column;
-    margin-left: 24%;
-    padding-left: 8%;
+    padding-left: 35%;
     padding-right: 8%;
     justify-content: center;
-
+    min-height: 100vh;
 }
 
 .tab{
     margin-bottom: 50px;
 }
 
-.rouge{
-    background: #f23763;
-}
+
 .rose{
-    background: #e76b88;
-    height: 120vh;
-
+    background: rgba(105, 107, 206, 0.107);
+    
 }
 
-.couleura {
-    color: #f23763;
+.couleurtitre {
+    color: #ffffff;
 }
 
-.couleurb {
-    color: #ea8ba1;
-
-}
 
 .autrepage{
     text-decoration: none;
     display: inline-block;
+
     padding-left: 5px;
     padding-right: 5px;
+    font-size: 2em;
+    color: #f23763;
 }
 
 .selected .autrepage {
@@ -103,4 +102,33 @@
 
 .fin{
     height: 150px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 35%;
+    padding-right: 8%;
+    justify-content: center;
 }
+
+
+.cta{
+    color: rgb(255, 255, 255);
+  }
+
+
+  @media (orientation : portrait) {
+
+    .projet{
+        
+        padding-left: 0%;
+        padding-right: 0%;
+        justify-content: center;
+        min-height: 150vh;
+    }
+
+    .rose{
+        width: 1000px;
+    }
+    
+
+  
+}  

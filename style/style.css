@@ -1,7 +1,12 @@
-* {
+ *{
     margin: 0;
-    }
-    
+  }
+
+
+body{
+  background-color: rgb(255, 255, 255);
+}
+
   .bouton{
     display: inline-block;
     border:solid;
@@ -17,18 +22,16 @@
   .navigation {
     position: fixed;
     top: 0;
-    z-index: 1000;
+    z-index: 2000;
     display: flex;
     flex-direction:column;
     justify-content: space-between;
     align-items: flex-start;
     padding-left: 30px;
     padding-right: 30px;
-    height: 100vh;
-    background-color:rgb(255, 255, 255);
-    width: 25%;
-    min-width: 280px;
-    margin-bottom: 30px;
+    width: 350px;
+    height: 100%;
+  
   }  
   
   .navigation ul {
@@ -53,10 +56,11 @@
   
   .navigation .selected a {
     
-    font-size: 200%;
-    font-weight: 200%;
+    font-size: 220%;
+    font-weight: 220%;
   }
   
+
   .ancre{
     height: 100px;
   }
@@ -66,12 +70,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 2em;
+    font-size: 1em;
   }
   
   
   .cta{
     text-decoration: none;
+    margin-bottom: 50px;
+    
   }
   
   .cta:hover{
@@ -101,3 +107,18 @@
     padding-bottom: 30px;
   }
   
+
+  @media (orientation : portrait) {
+
+    ul, h1{
+      display: none;
+    }
+    .navigation, .accueil{
+      flex-direction: row;
+      width: 100%;
+      height:100px;
+     
+    }
+
+    
+  }
