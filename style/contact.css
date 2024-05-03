@@ -5,7 +5,7 @@
 .tabs{
 
     display: flex;
-    margin-left:200px;
+    margin-left:110px;
     padding-left: 8%;
     padding-right: 8%;
     background-color: rgb(174, 182, 96);
@@ -28,8 +28,14 @@ Li{
 }
 
 .texte{
+    display: flex;
+    flex-direction: column;
     padding: 40px;
     color: white;
+}
+
+.paragraphe{
+    margin: 20px;
 }
 
 footer{
