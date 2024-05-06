@@ -23,6 +23,8 @@ Li{
     color: rgb(174, 182, 96)
 }
 
+
+
 .cta{
     color: rgb(174, 182, 96)
 }
@@ -41,4 +43,8 @@ Li{
 footer{
     padding: 20px;
     text-align: end;
+}
+
+.mention{
+    color: black;
 }
