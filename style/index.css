@@ -88,3 +88,29 @@ h1,p,a{
 .cta{
   color: #696bceff;
 }
+
+
+.prestel{
+  display: none;
+}
+
+@media (orientation : portrait) {
+
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .prestel{
+    display:unset;
+    padding: 30px;
+  }
+
+  .presentation{
+    display: none;
+    text-align: center;
+  }
+
+    
+
+}
