@@ -116,6 +116,11 @@ h1{
   padding-bottom: 30px;
 }
 
+footer{
+  padding: 10px;
+  text-align: end;
+}
+
 
 @media (orientation : portrait) {
 
