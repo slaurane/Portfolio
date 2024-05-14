@@ -2,6 +2,12 @@
     color: #ffffff;
 }
 
+.description{
+    margin-top: 10px;
+    color: white;
+    padding: 10px;
+}
+
 .navigation{
     background-color: rgb(212, 205, 11);
 }

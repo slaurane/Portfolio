@@ -26,6 +26,12 @@
     color: #ffffff;
 }
 
+.description{
+    margin-top: 10px;
+    color: white;
+    padding: 10px;
+}
+
 
 .autrepage{
     text-decoration: none;

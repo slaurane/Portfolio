@@ -43,7 +43,7 @@ body{
 }
 
 .navigation ul li{
-  margin: 30px;
+  margin: 30px 5px 30px 5px;
 }
 
 .navigation p{
@@ -56,10 +56,20 @@ body{
 
 .navigation .selected a {
   
-  font-size: 220%;
+  font-size: 200%;
   font-weight: 220%;
 }
 
+.selected{
+ 
+  border-radius: 15px;
+  padding: 10px;
+  border: solid;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.249);
+  background-color: rgba(255, 255, 255, 0.099);
+
+}
 
 .ancre{
   height: 100px;
