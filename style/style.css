@@ -44,6 +44,7 @@ body{
 
 .navigation ul li{
   margin: 30px 5px 30px 5px;
+  padding-left: 20px;
 }
 
 .navigation p{
@@ -62,12 +63,10 @@ body{
 
 .selected{
  
-  border-radius: 15px;
-  padding: 10px;
-  border: solid;
-  border-width: 1px;
+  border-radius: 35px;
+  padding: 20px;
   border-color: rgba(255, 255, 255, 0.249);
-  background-color: rgba(255, 255, 255, 0.099);
+  background-color: rgba(255, 255, 255, 0.166);
 
 }
 
