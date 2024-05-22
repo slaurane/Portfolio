@@ -57,7 +57,7 @@ body{
 
 .navigation .selected a {
   
-  font-size: 200%;
+  font-size: 150%;
   font-weight: 220%;
 }
 
@@ -112,7 +112,8 @@ h1,h2,h3,p,a, li{
 }
 
 h1{
-  padding-bottom: 30px;
+  font-size: 1.8em;
+  padding-bottom: 20px;
 }
 
 footer{
