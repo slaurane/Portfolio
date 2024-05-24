@@ -122,7 +122,16 @@
   }
 
 
-  @media (orientation : portrait) {
+  @media (max-width:1200px) {
+
+    .nom{
+        display: none;
+    }
+
+    .logo{
+        max-height: 80px;
+        object-fit: contain;
+    }
 
     .projet{
         

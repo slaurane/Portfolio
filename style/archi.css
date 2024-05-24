@@ -86,6 +86,17 @@
   
 @media (orientation : portrait) {
 
+
+    .nom{
+        display: none;
+    }
+
+    .logo{
+        max-height: 80px;
+        object-fit: contain;
+    }
+
+
     .projet{
         
         padding-left: 0%;
